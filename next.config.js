@@ -1,2 +1,6 @@
-import withImages from 'next-images';
-module.exports = withImages();
+const withImages = require('next-images');
+module.exports = withImages({
+  webpack(config, options) {
+    return config;
+  },
+});
