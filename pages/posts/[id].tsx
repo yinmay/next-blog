@@ -11,14 +11,13 @@ const postsShow: NextPage<Props> = (props) => {
   return (
     <div>
       <div>{post.title}</div>
-      <article>{post.content}</article>
+      <article dangerouslySetInnerHTML={{ __html: post.htmlContent }}></article>
     </div>
   );
 };
 
 export const getStaticPaths = async () => {
   const ids = await getPostIds();
-
   return {
     paths: ids.map((i) => ({ params: { id: i } })),
     fallback: false,
