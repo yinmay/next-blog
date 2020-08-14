@@ -12,6 +12,6 @@ describe('baidu', () => {
   it('能', () => {
     cy.visit('http://localhost:3000/posts');
     cy.contains('Hello').should('exist').click();
-    cy.contains('地方').should('exist');
+    cy.contains('地方').should('be.a', String);
   });
 });
