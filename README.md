@@ -24,7 +24,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - `docker run -v "$PWD/blog-data":/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_USER=blog -e POSTGRES_HOST_AUTH_METHOD=trust -d postgres:12.2`
 - check docker status `docker ps`
-- get into database `docker exec -it +容器id +bash` `psql -U blog`
+- get into database `docker exec -it +容器id +bash`
+- `psql -U blog`
+- `\c blog_development`
 - list blog database `\l blog`
 - connect database `\c`
 - display tables `\dt`
