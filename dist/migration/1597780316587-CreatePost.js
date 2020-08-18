@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.CreatePost1597526028114 = void 0;
+exports.CreatePost1597780316587 = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -17,12 +17,12 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var _typeorm = require("typeorm");
 
-var CreatePost1597526028114 = /*#__PURE__*/function () {
-  function CreatePost1597526028114() {
-    (0, _classCallCheck2["default"])(this, CreatePost1597526028114);
+var CreatePost1597780316587 = /*#__PURE__*/function () {
+  function CreatePost1597780316587() {
+    (0, _classCallCheck2["default"])(this, CreatePost1597780316587);
   }
 
-  (0, _createClass2["default"])(CreatePost1597526028114, [{
+  (0, _createClass2["default"])(CreatePost1597780316587, [{
     key: "up",
     value: function () {
       var _up = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(queryRunner) {
@@ -95,7 +95,7 @@ var CreatePost1597526028114 = /*#__PURE__*/function () {
       return down;
     }()
   }]);
-  return CreatePost1597526028114;
+  return CreatePost1597780316587;
 }();
 
-exports.CreatePost1597526028114 = CreatePost1597526028114;
+exports.CreatePost1597780316587 = CreatePost1597780316587;
