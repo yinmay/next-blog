@@ -20,7 +20,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `yarn add --dev typescript @types/react @types/react-dom @types/node`
 - change suffix from js to tsx
 
-### use docker to open postsql
+### check docker on process
+
+- docker ps and get ID
+
+### kill the process
+
+- docker kill +ID
+
+### delete docker continer
+
+- docker rm +ID
+
+### use docker to open postsql and create three databases
 
 - `docker run -v "$PWD/blog-data":/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_USER=blog -e POSTGRES_HOST_AUTH_METHOD=trust -d postgres:12.2`
 - check docker status `docker ps`
@@ -30,3 +42,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - list blog database `\l blog`
 - connect database `\c`
 - display tables `\dt`
+- delete table `drop database +tableName`
+- create database `CREATE DATABASE xxx ENCODING 'UTF8' LC_COLLATE 'en_US.utf8' LC_CTYPE 'en_US.utf8';`
+
+### create User table
+
+- `typeorm migration:create -n CreateUsers`
