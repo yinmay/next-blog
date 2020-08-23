@@ -8,15 +8,15 @@ import {
 } from 'typeorm';
 import { User } from './User';
 import { Post } from './Post';
-@Entity()
+@Entity('comments')
 export class Comment {
   @PrimaryGeneratedColumn('increment')
   id: number;
   @Column('varchar')
   content: string;
-  @CreateDateColumn('time')
+  @CreateDateColumn({ type: 'timestamp' })
   createdAt: Date;
-  @UpdateDateColumn('time')
+  @UpdateDateColumn({ type: 'timestamp' })
   updatedAt: Date;
   @ManyToOne((type) => User, (user) => user.comments)
   user: User;

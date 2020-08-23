@@ -10,19 +10,18 @@ import {
 import { Post } from './Post';
 import { Comment } from './Comment';
 
-@Entity()
+@Entity('users')
 export class User {
   @PrimaryGeneratedColumn('increment')
   id: number;
   @Column('varchar')
   username: string;
   @Column('varchar')
-  passwardDigest: string;
-  @CreateDateColumn('time')
+  passwordDigest: string;
+  @CreateDateColumn()
   createdAt: Date;
-  @UpdateDateColumn('time')
+  @UpdateDateColumn()
   updatedAt: Date;
-
   @OneToMany((type) => Post, (post) => post.author)
   posts: Post[];
 
