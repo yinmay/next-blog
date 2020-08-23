@@ -42,8 +42,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - list blog database `\l blog`
 - connect database `\c`
 - display tables `\dt`
+- check the table `\d posts`
 - delete table `drop database +tableName`
-- create database `CREATE DATABASE xxx ENCODING 'UTF8' LC_COLLATE 'en_US.utf8' LC_CTYPE 'en_US.utf8';`
+- create database `CREATE DATABASE blog_development ENCODING 'UTF8' LC_COLLATE 'en_US.utf8' LC_CTYPE 'en_US.utf8';`
 
 ### create User table
 
